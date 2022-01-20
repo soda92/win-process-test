@@ -1,0 +1,13 @@
+{
+    "files.associations": {
+        "*.gradle": "groovy",
+        "*.json": "jsonc",
+        "*.spec": "ruby",
+        "chrono": "cpp",
+        "future": "cpp",
+        "system_error": "cpp",
+        "typeindex": "cpp",
+        "xlocale": "cpp",
+        "thread": "cpp"
+    }
+}
