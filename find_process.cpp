@@ -12,6 +12,7 @@
 #include <chrono>
 using namespace std;
 
+// from: https://stackoverflow.com/a/32770084/12291425
 BOOL TerminateMyProcess(DWORD dwProcessId, UINT uExitCode)
 {
     DWORD dwDesiredAccess = PROCESS_TERMINATE;
@@ -67,6 +68,7 @@ void find_process(string sAppPath, string sAppName)
                       NULL,
                       NULL,
                       NULL, FALSE, 0, NULL, NULL, &si, &pi); // start it
+        dwProcessID = pi.dwProcessId;
 
     }
 
